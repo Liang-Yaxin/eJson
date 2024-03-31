@@ -1,8 +1,10 @@
+<div align="center">
+
 Manage your `json` data better with visual Excel sheets
 
 ![npm](https://img.shields.io/badge/npm-v1.0.0-blue)
 
-[English](./README.md) | 简体中文
+English | [简体中文](./READEME_Chinese.md)
 
 </div>
 
@@ -15,23 +17,23 @@ Output json data:
 ![output json data ](./media/effects.png)
 
 ## Introduction
-> ` ex-json-cli', which is composed of three words ` excel', ` json' and ` cli'.
+> ` ex-json-cli `, which is composed of three words  'excel',  'json' and  'cli'.
 
 ### Practical problems
 Sometimes, in order to save the back-end development cost, we will store some data directly in json, and then use these data for rendering. But:
 
--If there are more pages or modules that need data, the corresponding json files will also increase. There are too many files, the data is too fragmented, and managing so many files becomes troublesome.
--When the amount of data is large, the data will become very lengthy, and it is very difficult to find a specific piece of data directly.
--Sometimes' json' is not a good way to spread our data when we want to share it with other non-developers.
+- If there are more pages or modules that need data, the corresponding json files will also increase. There are too many files, the data is too fragmented, and managing so many files becomes troublesome.
+- When the amount of data is large, the data will become very lengthy, and it is very difficult to find a specific piece of data directly.
+- Sometimes' json' is not a good way to spread our data when we want to share it with other non-developers.
 
 ### Why choose Excel to manage data?
--More convenient operation. Excel is a professional office software. It is much more convenient to add, delete and check data in Excel than to modify it in our editor.
--More visual. Each sheet can be regarded as the data of a page or a module; The name of each sheet is the name of our json; Every row of data in the table is the data of every item in our json.
--More convenient management. The data are all integrated in an Excel file, which is more convenient for us to manage the data of all modules or pages.
--More suitable for communication. Json is not suitable for spreading among non-developers, but Excel is suitable for everyone. Not only can non-developers modify this Excel, but if you find something wrong in Excel, you can also modify it, and then synchronize it with others.
+- More convenient operation. Excel is a professional office software. It is much more convenient to add, delete and check data in Excel than to modify it in our editor.
+- More visual. Each sheet can be regarded as the data of a page or a module; The name of each sheet is the name of our json; Every row of data in the table is the data of every item in our json.
+- More convenient management. The data are all integrated in an Excel file, which is more convenient for us to manage the data of all modules or pages.
+- More suitable for communication. Json is not suitable for spreading among non-developers, but Excel is suitable for everyone. Not only can non-developers modify this Excel, but if you find something wrong in Excel, you can also modify it, and then synchronize it with others.
 
 ### Tools are born
-Therefore, in order to solve the above problems and combine the comprehensive advantages of Excel, `ex-JSON-CLI' came into being, so you just need to focus on managing the Excel file. s
+Therefore, in order to solve the above problems and combine the comprehensive advantages of Excel, `ex-JSON-CLI` came into being, so you just need to focus on managing the Excel file. s
 
 ## Quick start
 ### 1. Installation tool
@@ -56,7 +58,7 @@ ex-json-cli -i './xlsx_template/template.xlsx' -s 3 -r all
 
 ## Notice
 In the process of use, here are the following precautions:
--When generating json data, please ensure that the value of `-s` is correct. `-s` means that data is read from the first row of each ` sheet', and the default value is ` line 3'.
+-When generating json data, please ensure that the value of `-s` is correct. `-s` means that data is read from the first row of each ` sheet `, and the default value is  line 3.
 
 ## Options and commands
 ````npm
@@ -99,6 +101,6 @@ The overall structure of a table is generally divided into three parts (`top`, m
 ## How to use your own excel sheet
 Because everyone's excel is different, we strongly recommend that you use our template excel file (template.xlsx) to manage data, but the style of this file may not satisfy you.
 
-So if you want to `DIY' the style of the table, according to the analysis of the [Explanation](#Explanation) module, `DIY' your table needs to follow the following rules:
+So if you want to 'DIY' the style of the table, according to the analysis of the [Explanation](#Explanation) module, 'DIY' your table needs to follow the following rules:
 -modules' t' and' m' are not necessary, * * However, please ensure that the data in your excel file has the same structure as the module' b' in the above figure * *
 -Please make sure that your `-s` value is correct.

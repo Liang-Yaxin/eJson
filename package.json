@@ -11,7 +11,7 @@
         "media",
         "src",
         "template",
-        "READEME_English.md"
+        "READEME_Chinese.md"
     ],
     "scripts": {
         "start": "npm link"

@@ -1,7 +1,3 @@
-<div align="center">
-
-<img src="./media/logo.svg?v=1" width="70%">
-
 让可视化的`Excel`表格，更好的管理你的`json`数据
 
 ![npm](https://img.shields.io/badge/npm-v1.0.0-blue)

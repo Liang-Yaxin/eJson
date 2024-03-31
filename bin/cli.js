@@ -15,7 +15,7 @@ const { Command } = require('commander'),
 program
     .name(pkg.name)
     .description(`${Text.descText('=> Manage your json data better with visual excel sheets')}`)
-    .version(Text.descText(Config.LOGO), '-v', Text.infoText('View current version'))
+    .version(pkg.version, '-v', Text.infoText('View current version'))
     .helpOption('-h, --help', Text.infoText('View help'));
 
 
@@ -25,8 +25,7 @@ program
     .option('-s, --start-row [number]', Text.infoText('Read data from what row of sheet'))
     .option('-r, --range [string]', Text.infoText('Select the table you want to read'))
     .action(function(options) {
-        console.log(options);
-        console.log(options.range)
+        // console.log(options);
         try {
             // 验证-i
             if (options.input === true || !options.input) {

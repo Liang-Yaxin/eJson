@@ -22,7 +22,7 @@ function convertToJson(options) {
      * @finalRange 用来存放读取表的范围
      * @table 用表格形式来描述输出文件的信息
      */
-    console.log('options', options)
+    // console.log('options', options)
     const { input: userInput, startRow, range } = options,
     originalXlsxData = xlsx.parse(`${path.resolve('./', userInput)}`),
         totalSheet = originalXlsxData.filter(item => item.data.length !== 0),
@@ -36,11 +36,9 @@ function convertToJson(options) {
         });
 
     Log('Json data being generated...', 'info');
-    console.log();
 
     // 最外层
     for (let index = 0; index < totalSheet.length; index++) {
-        console.log(finalRange)
         if (finalRange.includes(index + 1) || finalRange === 'all') {
             const
                 everySheetArr = totalSheet[index], // 每个表格
@@ -81,11 +79,8 @@ function convertToJson(options) {
         }
     }
 
-    console.log(finalJsonArr);
-
     // 输出json文件
     finalJsonArr.forEach((item, index) => {
-        console.log(item)
         let
             pathName = `${finalOutPath}`
 
